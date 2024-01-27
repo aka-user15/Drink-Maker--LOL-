@@ -1,0 +1,94 @@
+body {
+  height: 100vh;
+}
+.cup {
+  margin: auto;
+  height: 75vh;
+  width: 300px;
+  border: 1px solid black;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  /* padding: 0; */
+}
+.orange_l {
+  background: #ffaf00;
+  animation: intro 2s forwards;
+}
+.apple_l {
+  background: #df963743;
+  animation: intro 2s forwards;
+}
+.grape_l {
+  background: #5f1c74;
+  animation: intro 2s forwards;
+}
+.fizz1 {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: #aaa;
+  grid-area: fizz1;
+}
+
+.fizz2 {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: #aaa;
+  grid-area: fizz5;
+}
+
+.fizzy_l {
+  background: url(sparkly.jpg);
+  opacity: 0.5;
+  animation: intro 2s forwards;
+}
+
+.mango_l {
+  background: #ffae00;
+  opacity: 0.5;
+  animation: intro 2s forwards;
+}
+#tb {
+  position: absolute;
+}
+.h-t {
+  display: none;
+}
+.v-t {
+  display: flex;
+  animation: tintro 5s forwards;
+}
+@keyframes intro {
+  0% {
+    height: 0px;
+  }
+  50% {
+    transform: rotate(-.5deg);
+  }
+  100% {
+    height: 50px;
+    transform: rotate(0deg);
+  }
+}
+@keyframes tintro {
+  0% {
+    transform: translate(0, -500%);
+  }
+  50% {
+    transform: translate(0, 5%);
+  }
+  100% {
+    transform: translate(0, -10000%);
+  }
+  120% {
+    display: none;
+  }
+}
+
+#ending, #rarity, #ending_p {
+  text-align: center;
+}
