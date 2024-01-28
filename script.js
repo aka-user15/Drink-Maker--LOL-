@@ -69,6 +69,7 @@ mix.addEventListener("click", () => {
   const ending = document.getElementById("ending");
   const rarity = document.getElementById("rarity");
   const ending_p = document.getElementById("ending_p");
+  const straw = document.getElementById("straw");
   const pros = [
     drink.includes("grape_l"),
     drink.includes("orange_l"),
@@ -90,18 +91,24 @@ mix.addEventListener("click", () => {
     console.log("lol");
     ending.innerText = "Arizona Mango Tea";
     ending_p.innerText = "Leveled up mango juice";
+    straw.className = "strawvwe"
     rarity.innerText = "Uncommon";
   }
-  if (drink.includes("orange_l") && drink.includes("fizzy_l") && cons[0,2,4,5]) {
+  else if (drink.includes("orange_l") && drink.includes("fizzy_l") && cons[0,2,4,5]) {
     console.log("lol");
     ending.innerText = "Fanta";
     ending_p.innerText = "Can i have a 5pc chicken mcnugget with that";
+    straw.className = "strawvwe"
     rarity.innerText = "Epic";
   }
-  if (drink.includes("grape_l") && drink.includes("fizzy_l") && cons[1,2,4,5]) {
+  else if (drink.includes("grape_l") && drink.includes("fizzy_l") && cons[1,2,4,5]) {
     console.log("lol");
     ending.innerText = "Grape soda";
     ending_p.innerText = "Grape Fanta";
+    straw.className = "strawvwe"
     rarity.innerText = "Epic";
+  } else {
+    straw.className = "strawv"
+
   }
 });
