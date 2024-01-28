@@ -170,6 +170,14 @@ body {
     transform: translate(-0%, -0%) rotate(19deg);
   }
 }
+@keyframes iintro {
+  0% {
+    transform: translate(-0%, -500%) rotate(19deg);
+  }
+  100% {
+    transform: translate(-0%, -0%) rotate(19deg);
+  }
+}
 @media (max-width: 414px) {
   .cup {
     margin-top: 100px;
