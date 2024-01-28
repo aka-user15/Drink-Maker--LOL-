@@ -170,7 +170,7 @@ body {
     transform: translate(-0%, -0%) rotate(19deg);
   }
 }
-@media (min-width: 414px) {
+@media (max-width: 414px) {
   .cup {
     margin-top: 100px;
   }
