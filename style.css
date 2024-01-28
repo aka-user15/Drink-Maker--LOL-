@@ -100,7 +100,7 @@ body {
   display: none;
 }
 .strawv {
-  height: 82vh;
+  height: 80vh;
   width: 20px;
   transform: rotate(19deg);
   background: hsla(57, 100%, 50%, 1);
@@ -162,20 +162,29 @@ body {
 body {
   /* background-color: red; */
 }
+.ii {
+  width: 150px;
+  animation: iintro 2s forwards;
+  top: 80px;
+  margin: auto;
+  position: relative;
+  z-index: -10000;
+}
 @keyframes sintro {
   0% {
     transform: translate(-0%, -500%) rotate(19deg);
   }
   100% {
     transform: translate(-0%, -0%) rotate(19deg);
+    top: 40px;
   }
 }
 @keyframes iintro {
   0% {
-    transform: translate(-0%, -500%) rotate(19deg);
+    transform: translate(-0%, -500%);
   }
   100% {
-    transform: translate(-0%, -0%) rotate(19deg);
+    transform: translate(-0%, -0%);
   }
 }
 @media (max-width: 414px) {

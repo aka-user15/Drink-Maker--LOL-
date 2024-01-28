@@ -86,6 +86,17 @@ mix.addEventListener("click", () => {
     !drink.includes("mango_l"),
     !drink.includes("tb"),
   ];
+  const iceCont = document.createElement('div')
+  cup.appendChild(iceCont)
+  iceCont.style.display = "flex"
+  const ice = document.createElement("img")
+  ice.src = "ice.png"
+  iceCont.appendChild(ice)
+  ice.className="ii"
+  const ice2 = document.createElement("img")
+  ice2.src = "ice.png"
+  iceCont.appendChild(ice2)
+  ice2.className="ii"
   console.log(drink.includes("mango"));
   if (drink.includes("mango_l") && drink.includes("tb") && cons[0,1,2,3]) {
     console.log("lol");
