@@ -155,8 +155,8 @@ body {
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFF200", endColorstr="#ED2B2B", GradientType=1 );
   position: absolute;
-  right: 48%;
-  bottom: 2.7%;
+  right: 47%;
+  bottom: 10.7%;
   animation: sintro 2s forwards;
 }
 body {
